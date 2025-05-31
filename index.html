@@ -7,10 +7,15 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  
+
+   
   <section class="container">
-    <h1>ConnectFor-Harshit 	
-&#128170;</h1>
-    <h2>QR Code Generator</h2>
+    <h1> </h1>
+    <div class="header">
+    <img class="logo" src="/connect_for.svg" alt="ConnectFor" />
+  </div>
+    <h4>QR Code Generator</h4>
     <br>
     <form id="qr-form">
       <input id="inptxt" type="text" placeholder="Enter text or URL" autocomplete="off" />
@@ -19,9 +24,11 @@
     <div class="img-div">
       <div class="spinner" hidden></div>
       <img id="qrimg" alt="Generated QR code" hidden />
-      <a id="download-btn" download="qrcode.png" hidden>📥 Download</a>
+      <a id="download-btn" href="#" download="qr-code.png">Download QR📥</a>
+
     </div>
   </section>
+  <button id="mode-toggle">🌙 Night Mode</button>
   <script src="index.js"></script>
 </body>
 </html>
