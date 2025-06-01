@@ -1,34 +1,40 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>QR Generator</title>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-  
 
-   
   <section class="container">
-    <h1> </h1>
+    <h1></h1>
     <div class="header">
-    <img class="logo" src="/connect_for.svg" alt="ConnectFor" />
-  </div>
+      <img class="logo" src="/connect_for.svg" alt="ConnectFor" />
+    </div>
     <h4>QR Code Generator</h4>
-    <br>
+    <br />
     <form id="qr-form">
       <input id="inptxt" type="text" placeholder="Enter text or URL" autocomplete="off" />
       <button type="submit">Generate QR</button>
     </form>
     <div class="img-div">
       <div class="spinner" hidden></div>
-      <img id="qrimg" alt="Generated QR code" hidden />
-      <a id="download-btn" href="#" download="qr-code.png">Download QR📥</a>
+      
+      
+      <div id="qrimg"></div>
 
+      
+      <a id="download-btn" href="#" download="qr-code.png" hidden>Download QR📥</a>
     </div>
   </section>
+
   <button id="mode-toggle">🌙 Night Mode</button>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+
   <script src="index.js"></script>
 </body>
 </html>
