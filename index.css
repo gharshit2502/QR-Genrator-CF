@@ -137,7 +137,7 @@ img#qrimg {
 
 a#download-btn {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
+  padding: 1rem 1.2rem;
   background: #13a877;
   color: #fff;
   text-decoration: none;
@@ -147,6 +147,7 @@ a#download-btn {
   font-weight: 500;
   transition: background 0.2s;
   margin-top: 1rem;
+  width: 200px;
 }
 
 a#download-btn:hover {
@@ -193,4 +194,12 @@ a#download-btn:hover {
 body.night #mode-toggle {
   background: #e2e8f0;
   color: #111;
+}
+#qr-form button {
+  width: 500px;      
+  max-width: 100%;  
+  padding: 0.75rem; 
+}
+#qr-form button {
+  padding: 1rem 2rem; 
 }
