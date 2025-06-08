@@ -203,3 +203,70 @@ body.night #mode-toggle {
 #qr-form button {
   padding: 1rem 2rem; 
 }
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 12px 0;
+  background-color: #f1f1f1;
+  color: #333;
+  border-top: 1px solid #ccc;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 10px;
+}
+
+footer a.linkedin {
+  color: #0077B5;
+}
+
+footer a.instagram {
+  color: #E4405F;
+}
+
+footer img {
+  width: 18px;
+  height: 18px;
+}
+
+/* Container for message and links */
+.footer-container {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Message line: force no wrapping */
+.footer-message {
+  white-space: nowrap;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* Social links container - inline links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* On wider screens, all can be inline if needed */
+@media (min-width: 481px) {
+  .footer-message {
+    white-space: normal;
+  }
+  .social-links {
+    justify-content: flex-start;
+  }
+}
