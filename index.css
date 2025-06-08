@@ -177,9 +177,8 @@ a#download-btn:hover {
 }
 
 #mode-toggle {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
+  margin-left: auto;
+  margin-right:20px ;
   background: #444;
   color: white;
   font-size: 0.85rem;
@@ -188,8 +187,8 @@ a#download-btn:hover {
   border: none;
   cursor: pointer;
   transition: background 0.3s, color 0.3s;
-  z-index: 10;
 }
+
 
 body.night #mode-toggle {
   background: #e2e8f0;
@@ -268,5 +267,21 @@ footer img {
   }
   .social-links {
     justify-content: flex-start;
+  }
+}
+
+
+.qr-appear {
+  animation: fadeInScale 0.6s ease-out;
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
   }
 }

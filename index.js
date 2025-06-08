@@ -35,12 +35,14 @@ form.addEventListener("submit", (e) => {
       width: 300,
       height: 300,
       correctLevel: QRCode.CorrectLevel.H,
+      
     });
 
     // Wait for QR to render (async delay)
     setTimeout(() => {
       const canvas = qrContainer.querySelector("canvas");
       if (canvas) {
+         canvas.classList.add("qr-appear");
         currentQRCanvas = canvas;
         dl.hidden = false;
         console.log("✅ QR code ready for download.");
@@ -71,6 +73,6 @@ dl.addEventListener("click", (e) => {
 toggleBtn.addEventListener("click", () => {
   document.body.classList.toggle("night");
   toggleBtn.textContent = document.body.classList.contains("night")
-    ? "☀️ Light Mode"
-    : "🌙 Night Mode";
+    ? "☀️  Mode"
+    : "🌙  Mode";
 });
